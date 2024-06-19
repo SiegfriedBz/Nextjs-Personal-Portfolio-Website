@@ -1,9 +1,10 @@
 import { FloatingNav } from '@/components/ui/FloatingNav'
+import { NAV_ITEMS } from '@/constants.ts'
 import { ThemeProvider } from '@/context/ThemeProvider'
+import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { NAV_ITEMS } from '@/constants.ts'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -46,6 +47,7 @@ export default function RootLayout({
           <FloatingNav navItems={NAV_ITEMS} />
           {children}
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
