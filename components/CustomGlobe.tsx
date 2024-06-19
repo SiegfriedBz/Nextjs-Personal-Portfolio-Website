@@ -400,11 +400,13 @@ const CustomGlobe = () => {
       className={`absolute
         z-10
         flex items-center
-        max-[380px]:-bottom-16
+        max-sm:w-[76%]
+        max-[320px]:-bottom-16
+        max-[380px]:-bottom-12
+        max-[425px]:-translate-x-7
         max-[425px]:-bottom-16
 
         max-sm:-bottom-10
-        max-sm:w-[76%]
         max-sm:translate-x-0
         max-sm:translate-y-0
 
@@ -425,9 +427,9 @@ const CustomGlobe = () => {
         lg:-bottom-24
         lg:-left-2
 
-        xl:-bottom-20
+        xl:-bottom-16
         xl:left-1/2
-        xl:-translate-x-1/4
+        xl:-translate-x-28
       `}
     >
       <World data={sampleArcs} globeConfig={globeConfig} />
