@@ -13,6 +13,7 @@ type TProps = {
   iconLists?: string[]
   link: string
   cuteLink: string
+  gitHubLink: string
 }
 export function Container3D({
   id,
@@ -21,7 +22,9 @@ export function Container3D({
   img,
   iconLists,
   link,
-  cuteLink
+  cuteLink,
+  // TODO ADD LINKS
+  gitHubLink
 }: TProps) {
   return (
     <PinContainer href={link} cuteLink={cuteLink}>

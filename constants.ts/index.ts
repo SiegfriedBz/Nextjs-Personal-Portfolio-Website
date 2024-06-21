@@ -84,8 +84,9 @@ export const PROJECTS = [
       '/stripe.svg',
       '/cloud.svg'
     ],
-    link: 'https://next-wild-oasis.vercel.app',
-    cuteLink: '/wild-oasis.com'
+    link: process.env.NEXT_PUBLIC_WILD_OASIS_URL || '',
+    cuteLink: '/wild-oasis.com',
+    gitHubLink: process.env.NEXT_PUBLIC_WILD_OASIS_GITHUB_URL || ''
   },
   {
     id: 2,
@@ -101,15 +102,16 @@ export const PROJECTS = [
       '/stripe.svg',
       '/cy.svg'
     ],
-    link: 'https://spa-natours.vercel.app/',
-    cuteLink: '/natours.com'
+    link: process.env.NEXT_PUBLIC_SPA_NATOURS_URL || '',
+    cuteLink: '/natours.com',
+    gitHubLink: process.env.NEXT_PUBLIC_SPA_NATOURS_GITHUB_URL || ''
   },
   {
     id: 3,
     title: 'Natours API',
     description:
       'Vibecession viral hashtag fixie tote bag hell of, hoodie sus pug master cleanse gentrify cupping truffaut',
-    img: process.env.NEXT_PUBLIC_SPA_NATOURS_CLOUDINARY_URL || '',
+    img: process.env.NEXT_PUBLIC_API_NATOURS_POSTMAN_CLOUDINARY_URL || '',
     iconLists: [
       '/ts.svg',
       '/nodejs.svg',
@@ -118,8 +120,9 @@ export const PROJECTS = [
       '/stripe.svg',
       '/jest.svg'
     ],
-    link: '/ui.yoom.com',
-    cuteLink: '/earth.com'
+    link: process.env.NEXT_PUBLIC_API_NATOURS_POSTMAN_URL || '',
+    cuteLink: '/postman-api-natours.com',
+    gitHubLink: process.env.NEXT_PUBLIC_API_NATOURS_GITHUB_URL || ''
   },
   {
     id: 4,
@@ -135,8 +138,9 @@ export const PROJECTS = [
       '/stripe.svg',
       '/prisma.png'
     ],
-    link: 'https://next-saas-petsoft.vercel.app/',
-    cuteLink: '/petsoft.com'
+    link: process.env.NEXT_PUBLIC_PETSOFT_URL || '',
+    cuteLink: '/petsoft.com',
+    gitHubLink: process.env.NEXT_PUBLIC_PETSOFT_GITHUB_URL || ''
   },
   {
     id: 5,
@@ -152,8 +156,9 @@ export const PROJECTS = [
       '/prisma.png',
       '/stripe.svg'
     ],
-    link: 'https://mio-zio.vercel.app/',
-    cuteLink: '/mio-zio.com'
+    link: process.env.NEXT_PUBLIC_MIOZIO_URL || '',
+    cuteLink: '/mio-zio.com',
+    gitHubLink: process.env.NEXT_PUBLIC_MIOZIO_GITHUB_URL || ''
   },
   {
     id: 6,
@@ -162,8 +167,9 @@ export const PROJECTS = [
       'Vibecession viral hashtag fixie tote bag hell of, hoodie sus pug master cleanse gentrify cupping truffaut',
     img: process.env.NEXT_PUBLIC_REACT_PIZZA_CLOUDINARY_URL || '',
     iconLists: ['/react.svg', '/tail.svg'],
-    link: 'https://react-napoli.onrender.com/',
-    cuteLink: '/napoli.com'
+    link: process.env.NEXT_PUBLIC_REACT_NAPOLI_URL || '',
+    cuteLink: '/napoli.com',
+    gitHubLink: process.env.NEXT_PUBLIC_REACT_NAPOLI_GITHUB_URL || ''
   },
   {
     id: 7,
@@ -172,8 +178,9 @@ export const PROJECTS = [
       'Vibecession viral hashtag fixie tote bag hell of, hoodie sus pug master cleanse gentrify cupping truffaut',
     img: process.env.NEXT_PUBLIC_AQUAMAN_CLOUDINARY_URL || '',
     iconLists: ['/next.svg', '/tail.svg', '/fm.svg'],
-    link: 'https://aquaman-surf-bali.vercel.app/',
-    cuteLink: '/aquaman-surf-bali.com'
+    link: process.env.NEXT_PUBLIC_AQUAMAN_URL || '',
+    cuteLink: '/aquaman-surf-bali.com',
+    gitHubLink: process.env.NEXT_PUBLIC_AQUAMAN_GITHUB_URL || ''
   },
   {
     id: 8,
@@ -182,8 +189,9 @@ export const PROJECTS = [
       'Vibecession viral hashtag fixie tote bag hell of, hoodie sus pug master cleanse gentrify cupping truffaut',
     img: process.env.NEXT_PUBLIC_CARHUB_CLOUDINARY_URL || '',
     iconLists: ['/next.svg', '/ts.svg', '/tail.svg', '/stripe.svg'],
-    link: 'https://car-hub-jade-two.vercel.app/',
-    cuteLink: '/car-hub.com'
+    link: process.env.NEXT_PUBLIC_CARHUB_URL || '',
+    cuteLink: '/car-hub.com',
+    gitHubLink: process.env.NEXT_PUBLIC_CARHUB_GITHUB_URL || ''
   },
 
   {
@@ -193,8 +201,9 @@ export const PROJECTS = [
       'Vibecession viral hashtag fixie tote bag hell of, hoodie sus pug master cleanse gentrify cupping truffaut',
     img: process.env.NEXT_PUBLIC_NIKE_CLOUDINARY_URL || '',
     iconLists: ['/next.svg', '/ts.svg', '/tail.svg', '/fm.svg'],
-    link: 'https://nike-landing-vert.vercel.app/',
-    cuteLink: '/nike.com'
+    link: process.env.NEXT_PUBLIC_NIKE_URL || '',
+    cuteLink: '/nike.com',
+    gitHubLink: process.env.NEXT_PUBLIC_NIKE_GITHUB_URL || ''
   },
   {
     id: 10,
@@ -203,8 +212,9 @@ export const PROJECTS = [
       'Vibecession viral hashtag fixie tote bag hell of, hoodie sus pug master cleanse gentrify cupping truffaut',
     img: process.env.NEXT_PUBLIC_TRAVEL_CLOUDINARY_URL || '',
     iconLists: ['/next.svg', '/ts.svg', '/tail.svg'],
-    link: 'https://travel-landing-seven.vercel.app/',
-    cuteLink: '/roamready.com'
+    link: process.env.NEXT_PUBLIC_TRAVEL_URL || '',
+    cuteLink: '/roamready.com',
+    gitHubLink: process.env.NEXT_PUBLIC_TRAVEL_GITHUB_URL || ''
   }
 ]
 
