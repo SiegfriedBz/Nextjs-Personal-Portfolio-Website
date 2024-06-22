@@ -119,7 +119,6 @@ export const PROJECTS = [
       '/express.png',
       '/cloud.svg',
       '/stripe.svg',
-      '/postman.svg',
       '/jest.svg'
     ],
     link: process.env.NEXT_PUBLIC_API_NATOURS_POSTMAN_URL || '',
