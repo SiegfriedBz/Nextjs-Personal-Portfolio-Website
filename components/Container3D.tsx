@@ -6,7 +6,6 @@ import Image from 'next/image'
 import { FaLocationArrow } from 'react-icons/fa'
 
 type TProps = {
-  id: number
   title: string
   description: string
   img: string
@@ -16,15 +15,12 @@ type TProps = {
   gitHubLink: string
 }
 export function Container3D({
-  id,
   title,
   description,
   img,
   iconLists,
   link,
-  cuteLink,
-  // TODO ADD LINKS
-  gitHubLink
+  cuteLink
 }: TProps) {
   return (
     <PinContainer href={link} cuteLink={cuteLink}>
@@ -58,17 +54,17 @@ export function Container3D({
         </span>
       </div>
 
-      {/* icons + link */}
-      <div className='flex items-center justify-between mt-7 mb-3'>
-        <div className='flex items-center max-sm:gap-x-1 sm:space-x-6'>
+      <div className='flex w-full items-center mt-7 mb-3'>
+        {/* icons */}
+        <div className='flex items-center'>
           {iconLists &&
             iconLists?.map((icon, index) => {
               return (
                 <div
                   key={icon}
-                  className='flex items-center justify-center border border-white/[0.2] rounded-full
+                  className='flex items-center border border-white/[0.2] rounded-full
                     bg-black w-8 h-8 lg:w-10 lg:h-10'
-                  style={{ transform: `translateX(-${15 * index}px)` }}
+                  style={{ transform: `translateX(-${10 * index}px)` }}
                 >
                   <Image
                     src={icon}
@@ -82,9 +78,9 @@ export function Container3D({
             })}
         </div>
         {/* link */}
-        <div className='flex items-center space-x-2 lg:text-xl md:text-xs text-sm'>
+        <div className='ms-auto flex items-center gap-x-2 lg:text-xl md:text-xs text-sm'>
           <a target='_blank' href={link} className='whitespace-nowrap'>
-            {cuteLink.includes('api') ? 'Visit Postman' : 'Visit Live Site'}
+            {cuteLink.includes('api') ? 'View in Postman' : 'Visit Live Site'}
           </a>
           {cuteLink.includes('api') ? (
             <div className='relative h-7 w-7'>
