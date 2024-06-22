@@ -82,11 +82,17 @@ export function Container3D({
             })}
         </div>
         {/* link */}
-        <div className='flex space-x-2 lg:text-xl md:text-xs text-sm'>
+        <div className='flex items-center space-x-2 lg:text-xl md:text-xs text-sm'>
           <a target='_blank' href={link} className='whitespace-nowrap'>
-            Visit Live Site
+            {cuteLink.includes('api') ? 'Visit Postman' : 'Visit Live Site'}
           </a>
-          <FaLocationArrow className='self-center' color='#CBACF9' />
+          {cuteLink.includes('api') ? (
+            <div className='relative h-7 w-7'>
+              <Image src='/postman.svg' className='mr-4' fill alt='postman' />
+            </div>
+          ) : (
+            <FaLocationArrow className='self-center' color='#CBACF9' />
+          )}
         </div>
       </div>
     </PinContainer>
