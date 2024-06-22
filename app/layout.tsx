@@ -11,6 +11,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: "Siegfried's Next.js Portfolio",
   description: 'Modern & Minimal Next.js Portfolio',
+  icons: {
+    icon: '/images/favicon.png'
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
