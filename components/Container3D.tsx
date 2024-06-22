@@ -60,7 +60,7 @@ export function Container3D({
 
       {/* icons + link */}
       <div className='flex items-center justify-between mt-7 mb-3'>
-        <div className='flex items-center gap-x-2'>
+        <div className='flex items-center max-sm:gap-x-1 sm:space-x-6'>
           {iconLists &&
             iconLists?.map((icon, index) => {
               return (
