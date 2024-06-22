@@ -73,16 +73,18 @@ export const PROJECTS = [
   {
     id: 1,
     title: 'The Wild Oasis - Book your room in paradise',
-    description:
-      'Vibecession viral hashtag fixie tote bag hell of, hoodie sus pug master cleanse gentrify cupping truffaut',
+    description: `Next.js 14 app with App Router and Server Actions allowing users to book cabins at the Wild Oasis hotel.
+        Users can navigate different cabins, sign up with Google and create an account.
+        Logged-in users can securely book cabins using Stripe for payment.
+        Users can also get a refund if the conditions are met.`,
     img: process.env.NEXT_PUBLIC_WILD_OASIS_CLOUDINARY_URL || '',
     iconLists: [
       '/next.svg',
       '/ts.svg',
       '/tail.svg',
       '/fm.svg',
-      '/stripe.svg',
-      '/cloud.svg'
+      '/cloud.svg',
+      '/stripe.svg'
     ],
     link: process.env.NEXT_PUBLIC_WILD_OASIS_URL || '',
     cuteLink: '/wild-oasis.com',
@@ -91,13 +93,13 @@ export const PROJECTS = [
   {
     id: 2,
     title: 'Natours - A Tour Booking App',
-    description:
-      'Vibecession viral hashtag fixie tote bag hell of, hoodie sus pug master cleanse gentrify cupping truffaut',
+    description: `React SPA frontend interacting with the Natours API. Tested with Cypress. User authentication, Stripe payments`,
     img: process.env.NEXT_PUBLIC_SPA_NATOURS_CLOUDINARY_URL || '',
     iconLists: [
       '/react.svg',
       '/ts.svg',
       '/tail.svg',
+      '/fm.svg',
       '/cloud.svg',
       '/stripe.svg',
       '/cy.svg'
@@ -109,8 +111,7 @@ export const PROJECTS = [
   {
     id: 3,
     title: 'Natours API',
-    description:
-      'Vibecession viral hashtag fixie tote bag hell of, hoodie sus pug master cleanse gentrify cupping truffaut',
+    description: `Express API, tested with Jest and SuperTest. Implements Stripe payments, user authentication, MongoDB, Zod validation, Cloudinary image storage, and Pug email templates.`,
     img: process.env.NEXT_PUBLIC_API_NATOURS_POSTMAN_CLOUDINARY_URL || '',
     iconLists: [
       '/ts.svg',
@@ -118,6 +119,7 @@ export const PROJECTS = [
       '/express.png',
       '/cloud.svg',
       '/stripe.svg',
+      '/postman.svg',
       '/jest.svg'
     ],
     link: process.env.NEXT_PUBLIC_API_NATOURS_POSTMAN_URL || '',
@@ -127,8 +129,7 @@ export const PROJECTS = [
   {
     id: 4,
     title: 'PetSoft Saas - Manage your Pet daycare with ease',
-    description:
-      'Vibecession viral hashtag fixie tote bag hell of, hoodie sus pug master cleanse gentrify cupping truffaut',
+    description: `SaaS app built on Next.js 14, with App Router, Server Actions for efficient data mutation. Styled with Tailwind CSS and implements Stripe for payments.`,
     img: process.env.NEXT_PUBLIC_PETSOFT_CLOUDINARY_URL || '',
     iconLists: [
       '/next.svg',
@@ -145,8 +146,7 @@ export const PROJECTS = [
   {
     id: 5,
     title: 'MioZio - The best pizza in town',
-    description:
-      'Vibecession viral hashtag fixie tote bag hell of, hoodie sus pug master cleanse gentrify cupping truffaut',
+    description: `Next.js 14 app with App Router, authentication via Google or Magic link (powered by Brevo), Stripe payments.`,
     img: process.env.NEXT_PUBLIC_MIOZIO_CLOUDINARY_URL || '',
     iconLists: [
       '/next.svg',
@@ -163,8 +163,7 @@ export const PROJECTS = [
   {
     id: 6,
     title: 'React Napoli - Maybe yet another pizza app',
-    description:
-      'Vibecession viral hashtag fixie tote bag hell of, hoodie sus pug master cleanse gentrify cupping truffaut',
+    description: `React SPA designed for users to order pizzas. Styled with Tailwind.`,
     img: process.env.NEXT_PUBLIC_REACT_PIZZA_CLOUDINARY_URL || '',
     iconLists: ['/react.svg', '/tail.svg'],
     link: process.env.NEXT_PUBLIC_REACT_NAPOLI_URL || '',
@@ -174,8 +173,7 @@ export const PROJECTS = [
   {
     id: 7,
     title: 'Aquaman Bali - The best surfing experience in Bali',
-    description:
-      'Vibecession viral hashtag fixie tote bag hell of, hoodie sus pug master cleanse gentrify cupping truffaut',
+    description: `Next.js 13 app developed to enhance the online presence of a surf school in Bali. Mobile only.`,
     img: process.env.NEXT_PUBLIC_AQUAMAN_CLOUDINARY_URL || '',
     iconLists: ['/next.svg', '/tail.svg', '/fm.svg'],
     link: process.env.NEXT_PUBLIC_AQUAMAN_URL || '',
@@ -185,8 +183,7 @@ export const PROJECTS = [
   {
     id: 8,
     title: 'CarHub - Booking your car is just a click away',
-    description:
-      'Vibecession viral hashtag fixie tote bag hell of, hoodie sus pug master cleanse gentrify cupping truffaut',
+    description: `Next.js 14 app for discovering and renting cars. Features Google authentication and Stripe payments.`,
     img: process.env.NEXT_PUBLIC_CARHUB_CLOUDINARY_URL || '',
     iconLists: ['/next.svg', '/ts.svg', '/tail.svg', '/stripe.svg'],
     link: process.env.NEXT_PUBLIC_CARHUB_URL || '',
@@ -197,8 +194,7 @@ export const PROJECTS = [
   {
     id: 9,
     title: 'Nike landing page',
-    description:
-      'Vibecession viral hashtag fixie tote bag hell of, hoodie sus pug master cleanse gentrify cupping truffaut',
+    description: `Next.js 14 app, single landing page implementing Tailwind CSS and responsive design.`,
     img: process.env.NEXT_PUBLIC_NIKE_CLOUDINARY_URL || '',
     iconLists: ['/next.svg', '/ts.svg', '/tail.svg', '/fm.svg'],
     link: process.env.NEXT_PUBLIC_NIKE_URL || '',
@@ -208,8 +204,7 @@ export const PROJECTS = [
   {
     id: 10,
     title: 'RoamReady - Travel app landing page',
-    description:
-      'Vibecession viral hashtag fixie tote bag hell of, hoodie sus pug master cleanse gentrify cupping truffaut',
+    description: `Next.js 14 app, single landing page implementing Tailwind CSS and responsive design.`,
     img: process.env.NEXT_PUBLIC_TRAVEL_CLOUDINARY_URL || '',
     iconLists: ['/next.svg', '/ts.svg', '/tail.svg'],
     link: process.env.NEXT_PUBLIC_TRAVEL_URL || '',
