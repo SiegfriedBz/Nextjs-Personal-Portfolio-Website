@@ -184,7 +184,7 @@ const CardContent = ({
       <div className='max-[412px]:hidden lg:hidden xl:block font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base'>
         {description}
       </div>
-      <div className='z-10 font-sans font-bold text-lg lg:text-xl xl:text-2xl max-w-96'>
+      <div className='z-10 max-[412px]:max-w-52 font-sans font-bold text-lg lg:text-xl xl:text-2xl max-w-96'>
         {title}
       </div>
 
