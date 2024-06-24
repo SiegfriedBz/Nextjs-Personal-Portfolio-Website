@@ -8,7 +8,8 @@ export const NAV_ITEMS = [
 export const GRID_ITEMS = [
   {
     id: 1,
-    title: 'I prioritize client collaboration, fostering open communication ',
+    title:
+      'I prioritize collaboration with stakeholders and fostering open communication',
     description: '',
     className: 'md:row-span-4 md:col-span-6 lg:col-span-3 lg:min-h-[60vh]',
     imgClassName: 'w-full h-full',
@@ -38,23 +39,23 @@ export const GRID_ITEMS = [
   },
   {
     id: 4,
-    title: 'Tech enthusiast with a passion for development.',
-    description: '',
+    title: 'Tech enthusiast with a passion for development',
+    description: '❤️ React & Next.js',
     className: 'md:row-span-1 md:col-span-3 lg:col-span-2 ',
     imgClassName: '',
     titleClassName: 'justify-start',
-    img: '/grid.png',
-    secondImg: '/b4.png'
+    img: '/b4.png',
+    secondImg: '/grid.png'
   },
 
   {
     id: 5,
-    title: 'Currently building a JS Animation library',
-    description: 'The Inside Scoop',
+    title: 'Currently improving my skills in Next.js',
+    description: '',
     className: 'md:col-span-3 md:row-span-2',
     imgClassName: 'absolute right-0 bottom-0 md:w-96 w-60',
     titleClassName: 'justify-center md:justify-start lg:justify-center',
-    img: '/b5.png',
+    img: '/next-cache.png',
     secondImg: '/grid.png'
   },
   {
@@ -93,7 +94,7 @@ export const PROJECTS = [
   {
     id: 2,
     title: 'Natours - A Tour Booking App',
-    description: `React SPA frontend interacting with the Natours API. Tested with Cypress. User authentication, Stripe payments`,
+    description: `React SPA interacting with the Natours API. Cypress tests, Stripe payments, React Query, Zustand, Zod validation`,
     img: process.env.NEXT_PUBLIC_SPA_NATOURS_CLOUDINARY_URL || '',
     iconLists: [
       '/react.svg',
@@ -217,7 +218,7 @@ export const WORK_EXPERIENCE = [
     id: 1,
     title: 'Intern - Fullstack Web Developer',
     description:
-      'Assisted in the development of a web-based platform using React.js, enhancing interactivity.',
+      'Contributed to the development of full-stack web applications using Ruby on Rails, JavaScript, TypeScript, React.js, Bootstrap, and Tailwind CSS. Ensured code quality by implementing and executing comprehensive tests with RSpec, while utilizing Git for version control.',
     className: 'md:col-span-2',
     thumbnail: '/exp4.png',
     flag: 'https://flagcdn.com/ch.svg'
@@ -226,7 +227,7 @@ export const WORK_EXPERIENCE = [
     id: 2,
     title: 'Project Manager - Land Remediation',
     description:
-      'Assisted in the development of a web-based platform using React.js, enhancing interactivity.',
+      'Oversee and coordinate all phases of land remediation projects, ensuring compliance with environmental regulations and safety standards. Liaise with stakeholders to deliver sustainable and effective land restoration solutions.',
     className: 'md:col-span-2',
     thumbnail: '/exp2.png',
     flag: 'https://flagcdn.com/ch.svg'
@@ -235,7 +236,7 @@ export const WORK_EXPERIENCE = [
     id: 3,
     title: 'Research Associate - Molecular Biology',
     description:
-      'Assisted in the development of a web-based platform using React.js, enhancing interactivity.',
+      'Research Associate at INSERM (french NIH), studying environment endocrine disruptors and neural stem cells.',
     className: 'md:col-span-2',
     thumbnail: '/exp2.png',
     flag: 'https://flagcdn.com/fr.svg'
@@ -244,7 +245,7 @@ export const WORK_EXPERIENCE = [
     id: 4,
     title: 'Research Associate - Molecular Biology',
     description:
-      'Assisted in the development of a web-based platform using React.js, enhancing interactivity.',
+      'Research Associate at UBC (Vancouver, BC), studying various topics related to epigenetics in fungi and mammals. Conduct molecular biology experiments to support research projects, analyze data, and collaborate within international teams.',
     className: 'md:col-span-2',
     thumbnail: '/exp3.png',
     flag: 'https://flagcdn.com/ca.svg'
@@ -255,8 +256,7 @@ export const EDUCATION = [
   {
     id: 1,
     title: 'Web Development Bootcamp',
-    description:
-      'Assisted in the development of a web-based platform using React.js, enhancing interactivity.',
+    description: 'Zurich; Switzerland - "Le Wagon" web-development bootcamp.',
     className: 'md:col-span-2',
     thumbnail: '/exp4.png',
     flag: 'https://flagcdn.com/ch.svg'
@@ -265,7 +265,7 @@ export const EDUCATION = [
     id: 2,
     title: 'Online Web Development Courses',
     description:
-      'Assisted in the development of a web-based platform using React.js, enhancing interactivity.',
+      'Completed extensive coursework covering JavaScript, TypeScript, React.js, and Next.js, focusing on advanced topics in front-end and full-stack development. Implemented hands-on projects to reinforce learning and practical application of concepts.',
     className: 'md:col-span-2',
     thumbnail: '/exp1.png',
     flag: 'https://flagcdn.com/ch.svg'
@@ -274,7 +274,7 @@ export const EDUCATION = [
     id: 3,
     title: 'M.Eng. Civil Engineering',
     description:
-      'Assisted in the development of a web-based platform using React.js, enhancing interactivity.',
+      'Ecole des Mines, France - Master of Engineering in civil & environment engineering.',
     className: 'md:col-span-2',
     thumbnail: '/exp2.png',
     flag: 'https://flagcdn.com/fr.svg'
@@ -283,7 +283,7 @@ export const EDUCATION = [
     id: 4,
     title: 'M.Sc. Molecular Biology',
     description:
-      'Assisted in the development of a web-based platform using React.js, enhancing interactivity.',
+      'University of Montpellier, France - Master of Science in molecular biology.',
     className: 'md:col-span-2',
     thumbnail: '/exp3.png',
     flag: 'https://flagcdn.com/fr.svg'
