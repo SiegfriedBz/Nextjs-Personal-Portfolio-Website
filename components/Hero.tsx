@@ -5,7 +5,7 @@ import { ButtonMagicAs } from './ui/ButtonMagicAs'
 
 const Hero = () => {
   return (
-    <div className='pt-36 pb-20 min-h-[100svh]'>
+    <div className='max-sm:pt-16 max-sm:pb-20 sm:pt-36 sm:pb-20 h-[100lvh]'>
       <SpotLights />
       <GridBackground className='absolute inset-0' />
       <HeroContent />
@@ -53,7 +53,7 @@ const HeroContent = () => {
           From Biology & Engineering to Crafting Code
         </h2> */}
         <TextEffect
-          className='text-center text-4xl md:text-5xl lg:text-6xl'
+          className='text-center text-4xl lg:text-5xl xl:text-6xl'
           words='From Biology & Engineering to Crafting Code: Ready to Thrive as a Junior Web Developer.'
         />
         <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
