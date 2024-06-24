@@ -1,7 +1,7 @@
-import ShowMyWorkButton from '@/components/ShowMyWorkButton'
 import { TextEffect } from '@/components/TextEffect'
 import { GridBackground } from '@/components/ui/GridBackground'
 import { Spotlight } from '@/components/ui/Spotlight'
+import { ButtonMagicAs } from './ui/ButtonMagicAs'
 
 const Hero = () => {
   return (
@@ -9,7 +9,7 @@ const Hero = () => {
       <SpotLights />
       <GridBackground className='absolute inset-0' />
       <HeroContent />
-      <ShowMyWorkButton />
+      <SeeMyWorkButton />
     </div>
   )
 }
@@ -62,5 +62,18 @@ const HeroContent = () => {
         </p>
       </div>
     </div>
+  )
+}
+
+const SeeMyWorkButton = () => {
+  return (
+    <ButtonMagicAs
+      as='Link'
+      href='#projects'
+      className='flex justify-center max-md:-mt-8 md:-mt-8'
+      otherClassNames='w-80'
+      label='See my work'
+      iconPosition='right'
+    />
   )
 }
