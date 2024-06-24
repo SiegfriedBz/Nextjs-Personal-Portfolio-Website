@@ -49,15 +49,16 @@ const HeroContent = () => {
         className='flex flex-col items-center justify-center
           max-w-[89vw] md:max-w-2xl lg:max-w-[60vw]'
       >
-        <h2 className='uppercase text-xs tracking-widest text-blue-100 max-w-80'>
-          Dynamic Web Magic with Next.js
-        </h2>
+        {/* <h2 className='uppercase text-xs tracking-widest text-blue-100 max-w-80 text-center'>
+          From Biology & Engineering to Crafting Code
+        </h2> */}
         <TextEffect
           className='text-center text-4xl md:text-5xl lg:text-6xl'
-          words='Transforming Concepts into Seamless User Experiences'
+          words='From Biology & Engineering to Crafting Code: Ready to Thrive as a Junior Web Developer.'
         />
         <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-          Hi, I&apos;m Siegfried, a Next.js developer based in Europe.
+          Hi, I&apos;m Siegfried, a JavaScript full-stack web developer based in
+          Europe.
         </p>
       </div>
     </div>
