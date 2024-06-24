@@ -22,8 +22,9 @@ const Footer = () => {
 
       <div className='w-full flex justify-center items-center space-x-8'>
         <ShimmerButtonAsLink
+          download={true}
           className='w-fit flex items-center space-x-4'
-          href='/resume.pdf'
+          href='/Resume-Siegfried-Bozza.pdf'
         >
           <IoMdCloudDownload />
           <span>Resume</span>
