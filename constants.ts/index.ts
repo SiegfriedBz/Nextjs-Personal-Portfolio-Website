@@ -74,7 +74,7 @@ export const PROJECTS = [
   {
     id: 1,
     title: 'The Wild Oasis - Book your room in paradise',
-    description: `Next.js 14 app with Server Actions.Responsive design, Optimistic UI.
+    description: `Next.js 14 app with Server Actions. Responsive design, Optimistic UI.
         Google Auth, Stripe payments & refunds.
         `,
     img: process.env.NEXT_PUBLIC_WILD_OASIS_CLOUDINARY_URL || '',
