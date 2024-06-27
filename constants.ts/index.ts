@@ -74,10 +74,9 @@ export const PROJECTS = [
   {
     id: 1,
     title: 'The Wild Oasis - Book your room in paradise',
-    description: `Next.js 14 app with App Router and Server Actions allowing users to book cabins at the Wild Oasis hotel.
-        Users can navigate different cabins, sign up with Google and create an account.
-        Logged-in users can securely book cabins using Stripe for payment.
-        Users can also get a refund if the conditions are met.`,
+    description: `Next.js 14 app with Server Actions.Responsive design, Optimistic UI.
+        Google Auth, Stripe payments & refunds.
+        `,
     img: process.env.NEXT_PUBLIC_WILD_OASIS_CLOUDINARY_URL || '',
     iconLists: [
       '/next.svg',
