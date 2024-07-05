@@ -73,6 +73,17 @@ export const GRID_ITEMS = [
 export const PROJECTS = [
   {
     id: 1,
+    title: 'Dev OverFlow - A community-driven platform for developers',
+    description: `Next.js 14 app with Server Actions. Clerk Auth. Responsive design, shadcn/ui, Tailwind.css.
+        `,
+    img: process.env.NEXT_PUBLIC_DEV_OVERFLOW_CLOUDINARY_URL || '',
+    iconLists: ['/next.svg', '/ts.svg', '/tail.svg'],
+    link: process.env.NEXT_PUBLIC_DEV_OVERFLOW_URL || '',
+    cuteLink: '/dev-overflow.com',
+    gitHubLink: process.env.NEXT_PUBLIC_DEV_OVERFLOW_GITHUB_URL || ''
+  },
+  {
+    id: 2,
     title: 'The Wild Oasis - Book your room in paradise',
     description: `Next.js 14 app with Server Actions. Responsive design, Optimistic UI.
         Google Auth, Stripe payments & refunds.
@@ -91,7 +102,7 @@ export const PROJECTS = [
     gitHubLink: process.env.NEXT_PUBLIC_WILD_OASIS_GITHUB_URL || ''
   },
   {
-    id: 2,
+    id: 3,
     title: 'Natours - A Tour Booking App',
     description: `React SPA interacting with the Natours API. Cypress tests, Stripe payments, React Query, Zustand, Zod validation`,
     img: process.env.NEXT_PUBLIC_SPA_NATOURS_CLOUDINARY_URL || '',
@@ -109,7 +120,7 @@ export const PROJECTS = [
     gitHubLink: process.env.NEXT_PUBLIC_SPA_NATOURS_GITHUB_URL || ''
   },
   {
-    id: 3,
+    id: 4,
     title: 'Natours API',
     description: `Express API, tested with Jest and SuperTest. Implements Stripe payments, user authentication, MongoDB, Zod validation, Cloudinary image storage, and Pug email templates.`,
     img: process.env.NEXT_PUBLIC_API_NATOURS_POSTMAN_CLOUDINARY_URL || '',
@@ -126,7 +137,7 @@ export const PROJECTS = [
     gitHubLink: process.env.NEXT_PUBLIC_API_NATOURS_GITHUB_URL || ''
   },
   {
-    id: 4,
+    id: 5,
     title: 'PetSoft Saas - Manage your Pet daycare with ease',
     description: `SaaS app built on Next.js 14, with App Router, Server Actions for efficient data mutation. Styled with Tailwind CSS and implements Stripe for payments.`,
     img: process.env.NEXT_PUBLIC_PETSOFT_CLOUDINARY_URL || '',
@@ -143,7 +154,7 @@ export const PROJECTS = [
     gitHubLink: process.env.NEXT_PUBLIC_PETSOFT_GITHUB_URL || ''
   },
   {
-    id: 5,
+    id: 6,
     title: 'MioZio - The best pizza in town',
     description: `Next.js 14 app with App Router, authentication via Google or Magic link (powered by Brevo), Stripe payments.`,
     img: process.env.NEXT_PUBLIC_MIOZIO_CLOUDINARY_URL || '',
@@ -160,7 +171,7 @@ export const PROJECTS = [
     gitHubLink: process.env.NEXT_PUBLIC_MIOZIO_GITHUB_URL || ''
   },
   {
-    id: 6,
+    id: 7,
     title: 'React Napoli - Maybe yet another pizza app',
     description: `React SPA designed for users to order pizzas. Styled with Tailwind.`,
     img: process.env.NEXT_PUBLIC_REACT_PIZZA_CLOUDINARY_URL || '',
@@ -170,7 +181,7 @@ export const PROJECTS = [
     gitHubLink: process.env.NEXT_PUBLIC_REACT_NAPOLI_GITHUB_URL || ''
   },
   {
-    id: 7,
+    id: 8,
     title: 'Aquaman Bali - The best surfing experience in Bali',
     description: `Next.js 13 app developed to enhance the online presence of a surf school in Bali. Mobile only.`,
     img: process.env.NEXT_PUBLIC_AQUAMAN_CLOUDINARY_URL || '',
@@ -180,7 +191,7 @@ export const PROJECTS = [
     gitHubLink: process.env.NEXT_PUBLIC_AQUAMAN_GITHUB_URL || ''
   },
   {
-    id: 8,
+    id: 9,
     title: 'CarHub - Booking your car is just a click away',
     description: `Next.js 14 app for discovering and renting cars. Features Google authentication and Stripe payments.`,
     img: process.env.NEXT_PUBLIC_CARHUB_CLOUDINARY_URL || '',
@@ -191,7 +202,7 @@ export const PROJECTS = [
   },
 
   {
-    id: 9,
+    id: 10,
     title: 'Nike landing page',
     description: `Next.js 14 app, single landing page implementing Tailwind CSS and responsive design.`,
     img: process.env.NEXT_PUBLIC_NIKE_CLOUDINARY_URL || '',
@@ -201,7 +212,7 @@ export const PROJECTS = [
     gitHubLink: process.env.NEXT_PUBLIC_NIKE_GITHUB_URL || ''
   },
   {
-    id: 10,
+    id: 11,
     title: 'RoamReady - Travel app landing page',
     description: `Next.js 14 app, single landing page implementing Tailwind CSS and responsive design.`,
     img: process.env.NEXT_PUBLIC_TRAVEL_CLOUDINARY_URL || '',
