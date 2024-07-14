@@ -29,7 +29,7 @@ export const TextGenerateEffect = ({
     return (
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
-          const isPurpleText = (idx > 6 && idx < 10) || idx > 11
+          const isPurpleText = idx > 6
           return (
             <motion.span
               key={word + idx}
