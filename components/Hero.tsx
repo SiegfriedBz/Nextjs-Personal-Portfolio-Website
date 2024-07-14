@@ -49,9 +49,6 @@ const HeroContent = () => {
         className='flex flex-col items-center justify-center
           max-w-[89vw] md:max-w-2xl lg:max-w-[60vw]'
       >
-        {/* <h2 className='uppercase text-xs tracking-widest text-blue-100 max-w-80 text-center'>
-          From Biology & Engineering to Crafting Code
-        </h2> */}
         <TextEffect
           className='text-center text-4xl lg:text-5xl xl:text-6xl'
           words='From Biology & Engineering to Crafting Code: Ready to Thrive as a JavaScript Web Developer.'
