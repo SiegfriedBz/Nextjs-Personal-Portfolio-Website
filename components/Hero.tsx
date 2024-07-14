@@ -51,7 +51,7 @@ const HeroContent = () => {
       >
         <TextEffect
           className='text-center text-4xl lg:text-5xl xl:text-6xl'
-          words='From Biology & Engineering to Crafting Code: Ready to Thrive as a JavaScript Web Developer.'
+          words='From Biology & Engineering to JavaScript Web Development.'
         />
         <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
           Hi, I&apos;m Siegfried, a JavaScript full-stack web developer based in

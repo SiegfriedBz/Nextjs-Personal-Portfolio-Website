@@ -19,8 +19,8 @@ export const TextGenerateEffect = ({
         opacity: 1
       },
       {
-        duration: 2,
-        delay: stagger(0.2)
+        duration: 3,
+        delay: stagger(0.25)
       }
     )
   }, [scope, animate])
@@ -29,14 +29,12 @@ export const TextGenerateEffect = ({
     return (
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
-          const isPurpleText = idx > 6
+          const className =
+            idx > 4 ? 'text-purple' : 'dark:text-white text-black'
           return (
             <motion.span
               key={word + idx}
-              className={cn(
-                'opacity-0',
-                isPurpleText ? 'text-purple' : 'dark:text-white text-black'
-              )}
+              className={cn('opacity-0', className)}
             >
               {word}{' '}
             </motion.span>
