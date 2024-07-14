@@ -29,13 +29,12 @@ export const TextGenerateEffect = ({
     return (
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
+          const isPurpleText = (idx > 6 && idx < 10) || idx > 11
           return (
             <motion.span
               key={word + idx}
               className={`opacity-0 ${
-                (idx > 6 && idx < 10) || idx > 11
-                  ? 'text-purple'
-                  : 'dark:text-white text-black'
+                isPurpleText ? 'text-purple' : 'dark:text-white text-black'
               }
                `}
             >
