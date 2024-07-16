@@ -1,9 +1,7 @@
-'use client'
-
-import React from 'react'
 import { PinContainer } from '@/components/ui/PinContainer'
 import Image from 'next/image'
 import { FaLocationArrow } from 'react-icons/fa'
+import getCldImages from '@/utils/getCldImages'
 
 type TProps = {
   title: string
@@ -22,6 +20,8 @@ export function Container3D({
   link,
   cuteLink
 }: TProps) {
+  const { url, blurredUrl } = getCldImages(img)
+
   return (
     <PinContainer href={link} cuteLink={cuteLink}>
       {/* image */}
@@ -37,8 +37,11 @@ export function Container3D({
           <Image src='/bg.png' fill alt='bg-image' />
         </div>
         <Image
-          src={img}
+          src={url}
           fill
+          quality={100}
+          placeholder='blur'
+          blurDataURL={blurredUrl}
           alt={title}
           className='z-10 object-cover absolute inset-0 rounded-xl'
         />
