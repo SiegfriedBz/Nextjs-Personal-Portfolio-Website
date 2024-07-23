@@ -29,7 +29,7 @@ function Body({ data }: { data: TData[] }) {
   return (
     <div className='w-full mt-12 grid grid-cols-1 lg:grid-cols-4 gap-10'>
       {data.map((d) => {
-        const { id, title, description, className, thumbnail, flag } = d
+        const { id, title, description, thumbnail, flag } = d
 
         return (
           <Button
@@ -47,7 +47,7 @@ function Body({ data }: { data: TData[] }) {
                 className='opacity-80'
               />
             </div>
-            <div className='flex flex-col lg:flex-row lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2'>
+            <div className='flex w-full flex-col lg:flex-row lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2'>
               <div className='relative lg:w-24 md:w-16 w-12 lg:h-24 md:h-16 h-12 overflow-hidden'>
                 <Image
                   src={thumbnail}
@@ -57,7 +57,7 @@ function Body({ data }: { data: TData[] }) {
                 />
               </div>
 
-              <div className='ms-2 lg:ms-5'>
+              <div className='ms-2 lg:ms-5 w-full'>
                 <h1 className='text-start text-xl md:text-2xl font-bold'>
                   <span>{title}</span>
                 </h1>

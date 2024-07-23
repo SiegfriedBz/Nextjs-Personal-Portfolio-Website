@@ -12,6 +12,7 @@ type TProps = {
   cuteLink: string
   gitHubLink: string
 }
+
 export function Container3D({
   title,
   description,
@@ -39,7 +40,7 @@ export function Container3D({
         <Image
           src={url}
           fill
-          quality={100}
+          quality={85}
           placeholder='blur'
           blurDataURL={blurredUrl}
           alt={title}
@@ -71,6 +72,7 @@ export function Container3D({
                 >
                   <Image
                     src={icon}
+                    quality={50}
                     alt={icon}
                     width={40}
                     height={40}
