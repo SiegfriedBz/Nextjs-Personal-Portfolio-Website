@@ -79,14 +79,6 @@ const Footer = () => {
                     <Image src={social.img} fill alt="social" />
                   </span>
                 </LinkPreview>
-                {/* <a
-                  href={social.href}
-                  target="_blank"
-                  className="relative w-8 h-8 flex justify-center items-center shadow-md
-                  "
-                >
-                  <Image src={social.img} fill alt="social" />
-                </a> */}
               </div>
             );
           })}
