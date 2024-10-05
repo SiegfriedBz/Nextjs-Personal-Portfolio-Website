@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/MovingBorder";
 import Image from "next/image";
+import React from "react";
 
 type TData = {
   id: number;

@@ -1,9 +1,10 @@
-import CustomGlobe from '@/components/CustomGlobe'
-import TechStack from '@/components/TechStack'
-import { BgGradientAnimation } from '@/components/ui/BgGradientAnimation'
-import { cn } from '@/utils/cn'
-import Image from 'next/image'
-import LastCardButtonMagic from './LastCardButtonMagic'
+import CustomGlobe from "@/components/CustomGlobe";
+import TechStack from "@/components/TechStack";
+import { BgGradientAnimation } from "@/components/ui/BgGradientAnimation";
+import { cn } from "@/utils/cn";
+import Image from "next/image";
+import LastCardButtonMagic from "./LastCardButtonMagic";
+import React from "react";
 
 // const nonPurgedTailwindClasses = [
 //   'md:row-span-4 md:col-span-6 lg:col-span-3 lg:row-span-2 lg:min-h-[60vh]',
@@ -16,22 +17,22 @@ import LastCardButtonMagic from './LastCardButtonMagic'
 
 export const BentoGrid = ({
   className,
-  children
+  children,
 }: {
-  className?: string
-  children?: React.ReactNode
+  className?: string;
+  children?: React.ReactNode;
 }) => {
   return (
     <div
       className={cn(
-        'grid grid-cols-1 md:grid-cols-6 lg:grid-rows-4 lg:grid-cols-5 gap-4 max-w-7xl mx-auto',
+        "grid grid-cols-1 md:grid-cols-6 lg:grid-rows-4 lg:grid-cols-5 gap-4 max-w-7xl mx-auto",
         className
       )}
     >
       {children}
     </div>
-  )
-}
+  );
+};
 
 export const BentoGridItem = ({
   id,
@@ -41,16 +42,16 @@ export const BentoGridItem = ({
   imgClassName,
   titleClassName,
   img,
-  secondImg
+  secondImg,
 }: {
-  id: number
-  title: string
-  description: string
-  className?: string
-  imgClassName?: string
-  titleClassName?: string
-  img?: string
-  secondImg?: string
+  id: number;
+  title: string;
+  description: string;
+  className?: string;
+  imgClassName?: string;
+  titleClassName?: string;
+  img?: string;
+  secondImg?: string;
 }) => {
   return (
     <div
@@ -71,12 +72,12 @@ export const BentoGridItem = ({
         className
       )}
       style={{
-        background: 'rgb(4,7,29)',
+        background: "rgb(4,7,29)",
         backgroundColor:
-          'linear-gradient(90deg, rgba(28,25,83,1) 0%, rgba(48,48,108,1) 35%, rgba(39,176,204,1) 100%)'
+          "linear-gradient(90deg, rgba(28,25,83,1) 0%, rgba(48,48,108,1) 35%, rgba(39,176,204,1) 100%)",
       }}
     >
-      <div className={`${id === 6 ? 'flex justify-center h-full' : ''}`}>
+      <div className={`${id === 6 ? "flex justify-center h-full" : ""}`}>
         {img && (
           <FirstImage img={img} title={title} imgClassName={imgClassName} />
         )}
@@ -101,20 +102,20 @@ export const BentoGridItem = ({
         </CardContent>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const FirstImage = ({
   img,
   title,
-  imgClassName
+  imgClassName,
 }: {
-  img: string
-  title: string
-  imgClassName?: string
+  img: string;
+  title: string;
+  imgClassName?: string;
 }) => {
   return (
-    <div className='absolute inset-0'>
+    <div className="absolute inset-0">
       {img && (
         <Image
           src={`${img}`}
@@ -122,49 +123,49 @@ const FirstImage = ({
           alt={title}
           className={cn(
             imgClassName,
-            'object-cover object-center rounded-3xl '
+            "object-cover object-center rounded-3xl "
           )}
         />
       )}
     </div>
-  )
-}
+  );
+};
 
 const SecondImage = ({
   id,
   secondImg,
-  title
+  title,
 }: {
-  id: number
-  secondImg: string
-  title: string
+  id: number;
+  secondImg: string;
+  title: string;
 }) => {
   return (
     <div
       className={`absolute right-0 -bottom-5 ${
-        id === 5 ? 'w-full opacity-80' : ''
+        id === 5 ? "w-full opacity-80" : ""
       }`}
     >
       <Image
         src={`${secondImg}`}
         fill
         alt={title}
-        className='object-cover object-center h-full w-full'
+        className="object-cover object-center h-full w-full"
       />
     </div>
-  )
-}
+  );
+};
 
 const CardContent = ({
   titleClassName,
   title,
   description,
-  children
+  children,
 }: {
-  titleClassName?: string
-  title: string
-  description: string
-  children: React.ReactNode
+  titleClassName?: string;
+  title: string;
+  description: string;
+  children: React.ReactNode;
 }) => {
   return (
     <div
@@ -181,22 +182,22 @@ const CardContent = ({
         `
       )}
     >
-      <div className='max-[412px]:hidden lg:hidden xl:block font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base'>
+      <div className="max-[412px]:hidden lg:hidden xl:block font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base">
         {description}
       </div>
-      <div className='z-10 max-[412px]:max-w-52 font-sans font-bold text-lg lg:text-xl xl:text-2xl max-w-96'>
+      <div className="z-10 max-[412px]:max-w-52 font-sans font-bold text-lg lg:text-xl xl:text-2xl max-w-96">
         {title}
       </div>
 
       {children}
     </div>
-  )
-}
+  );
+};
 
 const LastCardAnimation = () => {
   return (
-    <div className='absolute inset-0 rounded-3xl overflow-hidden'>
+    <div className="absolute inset-0 rounded-3xl overflow-hidden">
       <BgGradientAnimation />
     </div>
-  )
-}
+  );
+};

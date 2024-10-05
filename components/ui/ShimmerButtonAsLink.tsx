@@ -1,15 +1,15 @@
 type TProps = {
-  className?: string
-  href: string
-  download?: boolean
-  children: React.ReactNode
-}
+  className?: string;
+  href: string;
+  download?: boolean;
+  children: React.ReactNode;
+};
 
 const ShimmerButtonAsLink = ({
   className,
   href,
   download = false,
-  children
+  children,
 }: TProps) => {
   return (
     <a
@@ -20,7 +20,7 @@ const ShimmerButtonAsLink = ({
     >
       {children}
     </a>
-  )
-}
+  );
+};
 
-export default ShimmerButtonAsLink
+export default ShimmerButtonAsLink;

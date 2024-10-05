@@ -1,12 +1,12 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 type TLinkUnderProps = {
-  href: string
-  label: string
-  className?: string
-}
+  href: string;
+  label: string;
+  className?: string;
+};
 
-const LinkUnder = ({ href, label, className = '' }: TLinkUnderProps) => {
+const LinkUnder = ({ href, label, className = "" }: TLinkUnderProps) => {
   return (
     <Link
       href={href}
@@ -33,7 +33,7 @@ const LinkUnder = ({ href, label, className = '' }: TLinkUnderProps) => {
     >
       {label}
     </Link>
-  )
-}
+  );
+};
 
-export default LinkUnder
+export default LinkUnder;
