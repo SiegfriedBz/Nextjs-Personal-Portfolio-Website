@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Grid } from "@/components/Grid";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
-import { EDUCATION, WORK_EXPERIENCE } from "@/constants.ts";
+import { EDUCATION, HACKHATON, WORK_EXPERIENCE } from "@/constants.ts";
 
 export default function Home() {
   return (
@@ -34,6 +34,14 @@ export default function Home() {
             <h1 className="heading">
               My
               <span className="text-purple"> work experience</span>
+            </h1>
+          </AboutMeGrid>
+        </section>
+
+        <section id="hackathons" className="scroll-mt-0 py-20">
+          <AboutMeGrid data={HACKHATON}>
+            <h1 className="heading">
+              <span className="text-purple">Hackathons</span>
             </h1>
           </AboutMeGrid>
         </section>

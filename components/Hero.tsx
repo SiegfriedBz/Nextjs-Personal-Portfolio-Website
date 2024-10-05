@@ -54,8 +54,8 @@ const HeroContent = () => {
           words="From Biology & Engineering to JavaScript Web Development."
         />
         <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-          Hi, I&apos;m Siegfried, a JavaScript full-stack web developer based in
-          Europe.
+          Hi, I&apos;m Siegfried, a JavaScript full-stack Web Developer.{" "}
+          <span className="whitespace-nowrap">Mobile, based on Earth! :)</span>
         </p>
       </div>
     </div>

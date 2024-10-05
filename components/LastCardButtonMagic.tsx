@@ -3,7 +3,7 @@ import { FaLocationArrow } from "react-icons/fa";
 
 const LastCardButtonMagic = () => {
   return (
-    <div className="relative z-[500] mt-5 h-full w-full">
+    <div className="relative z-[500] mt-5 md:mt-8 h-full w-full">
       <ButtonMagicAs
         as="a"
         href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}

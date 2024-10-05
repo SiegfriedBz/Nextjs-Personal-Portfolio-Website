@@ -69,6 +69,7 @@ export const BentoGridItem = ({
           border-white/[0.15] 
           justify-between 
           flex flex-col space-y-4`,
+        id === 6 ? "lg:col-start-3 lg:col-end-6" : "",
         className
       )}
       style={{
@@ -87,6 +88,7 @@ export const BentoGridItem = ({
         )}
 
         <CardContent
+          id={id}
           titleClassName={titleClassName}
           title={title}
           description={description}
@@ -94,10 +96,10 @@ export const BentoGridItem = ({
           {id === 2 && <CustomGlobe />}
           {id === 3 && <TechStack />}
           {id === 6 && (
-            <>
+            <div className="w-full">
               <LastCardAnimation />
               <LastCardButtonMagic />
-            </>
+            </div>
           )}
         </CardContent>
       </div>
@@ -157,11 +159,13 @@ const SecondImage = ({
 };
 
 const CardContent = ({
+  id,
   titleClassName,
   title,
   description,
   children,
 }: {
+  id: number;
   titleClassName?: string;
   title: string;
   description: string;
@@ -182,10 +186,16 @@ const CardContent = ({
         `
       )}
     >
-      <div className="max-[412px]:hidden lg:hidden xl:block font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base">
+      <div
+        className={`max-[412px]:hidden lg:hidden xl:block font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base`}
+      >
         {description}
       </div>
-      <div className="z-10 max-[412px]:max-w-52 font-sans font-bold text-lg lg:text-xl xl:text-2xl max-w-96">
+      <div
+        className={`z-10 max-[412px]:max-w-52 font-sans font-bold text-lg lg:text-xl xl:text-2xl max-w-96 ${
+          id === 6 && "lg:max-w-full"
+        }`}
+      >
         {title}
       </div>
 

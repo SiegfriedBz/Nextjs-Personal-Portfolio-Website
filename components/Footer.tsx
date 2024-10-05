@@ -5,6 +5,7 @@ import { IoMdCloudDownload } from "react-icons/io";
 import ShimmerButtonAsLink from "./ui/ShimmerButtonAsLink";
 import { SOCIAL_MEDIA } from "@/constants.ts";
 import LinkUnder from "./LinkUnder";
+import { LinkPreview } from "./ui/link-preview";
 
 const year = new Date().getFullYear();
 
@@ -58,26 +59,26 @@ const Footer = () => {
 
         <div className="sm:ms-auto flex items-center justify-center space-x-3 md:space-x-6">
           {SOCIAL_MEDIA.map((social) => {
+            if (!social.href) return null;
+
             return (
               <div
                 key={social.id}
-                className="w-10 h-10
+                className="w-fit h-fit
                 backdrop-filter backdrop-blur-lg backdrop-saturate-200 
-                bg-opacity-75 
-                bg-black-200 border 
-                border-black-300
+
                 flex justify-center items-center
                 rounded-md
               "
               >
-                <a
-                  href={social.href}
-                  target="_blank"
-                  className="relative w-8 h-8 flex justify-center items-center shadow-md
-                  "
+                <LinkPreview
+                  url={social.href}
+                  className="font-bold border-none"
                 >
-                  <Image src={social.img} fill alt="social" />
-                </a>
+                  <span className="relative w-8 h-8 flex justify-center items-center">
+                    <Image src={social.img} fill alt="social" />
+                  </span>
+                </LinkPreview>
               </div>
             );
           })}
