@@ -1,8 +1,12 @@
 import { Button } from "@/components/ui/MovingBorder";
 import Image from "next/image";
+import React from "react";
+import { LinkPreview } from "./ui/link-preview";
 
 type TData = {
   id: number;
+  linkUrl?: string;
+  linkLabel?: string;
   title: string;
   description: string;
   className: string;
@@ -26,10 +30,19 @@ const AboutMeGrid = ({ data, children }: TProps) => {
 AboutMeGrid.Body = Body;
 
 function Body({ data }: { data: TData[] }) {
+  const isSingleItem = data.length === 1;
+
   return (
-    <div className="w-full mt-12 grid grid-cols-1 lg:grid-cols-4 gap-10">
+    <div
+      className={`w-full mt-12 ${
+        isSingleItem
+          ? "flex justify-center items-center lg:max-w-[60vw] xl:max-w-[50vw] 2xl:max-w-[40vw]  mx-auto"
+          : "grid grid-cols-1 lg:grid-cols-4 gap-10"
+      }`}
+    >
       {data.map((d) => {
-        const { id, title, description, thumbnail, flags } = d;
+        const { id, title, description, linkUrl, linkLabel, thumbnail, flags } =
+          d;
 
         return (
           <Button
@@ -69,6 +82,15 @@ function Body({ data }: { data: TData[] }) {
                 <p className="text-start text-white-100 mt-3 font-semibold">
                   {description}
                 </p>
+
+                {linkUrl && (
+                  <LinkPreview
+                    url={linkUrl}
+                    className="font-bold inline-block mt-2.5 w-full text-left"
+                  >
+                    {linkLabel}
+                  </LinkPreview>
+                )}
               </div>
             </div>
           </Button>

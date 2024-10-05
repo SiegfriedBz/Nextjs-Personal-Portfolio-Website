@@ -1,24 +1,27 @@
-import { withSentryConfig } from '@sentry/nextjs'
+import { withSentryConfig } from "@sentry/nextjs";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    domains: [
+      "api.microlink.io", // Microlink Image Preview
+    ],
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'res.cloudinary.com',
-        port: '',
-        pathname: '/**'
-      }
-    ]
-  }
-}
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+        port: "",
+        pathname: "/**",
+      },
+    ],
+  },
+};
 
 export default withSentryConfig(nextConfig, {
   // For all available options, see:
   // https://github.com/getsentry/sentry-webpack-plugin#options
 
-  org: 'siegfriedbz-as',
-  project: 'javascript-nextjs',
+  org: "siegfriedbz-as",
+  project: "javascript-nextjs",
 
   // Only print logs for uploading source maps in CI
   silent: !process.env.CI,
@@ -45,5 +48,5 @@ export default withSentryConfig(nextConfig, {
   // See the following for more information:
   // https://docs.sentry.io/product/crons/
   // https://vercel.com/docs/cron-jobs
-  automaticVercelMonitors: true
-})
+  automaticVercelMonitors: true,
+});
