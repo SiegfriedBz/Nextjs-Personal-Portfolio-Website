@@ -1,5 +1,5 @@
-import { BentoGrid, BentoGridItem } from '@/components/BentoGrid'
-import { GRID_ITEMS } from '@/constants.ts'
+import { BentoGrid, BentoGridItem } from "@/components/BentoGrid";
+import { GRID_ITEMS } from "@/constants.ts";
 
 export function Grid() {
   return (
@@ -13,8 +13,8 @@ export function Grid() {
           imgClassName,
           titleClassName,
           img,
-          secondImg
-        } = item
+          secondImg,
+        } = item;
         return (
           <BentoGridItem
             key={id}
@@ -27,8 +27,8 @@ export function Grid() {
             img={img}
             secondImg={secondImg}
           />
-        )
+        );
       })}
     </BentoGrid>
-  )
+  );
 }
